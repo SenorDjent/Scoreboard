@@ -1,0 +1,27 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="scorecard-el scorecard-home">
+                <h3>HOME</h3>
+                <h2 id="score-home" class="scorecard-score scorecard-score-home">0</h2>
+               <div class="scorecard-btn"> 
+                <button id="increment" class="add-point" onclick="incrementHome()">ADD POINT</button>
+                <button id="decrement" class="subtract-point" onclick="decrementHome()">SUBTRACT POINT</button>
+               </div>
+            </div>
+            <div class="scorecard-el scorecard-away">
+                <h3>AWAY</h3>
+                <h2 id="score-away" class="scorecard-score scorecard-score-away">0</h2>
+              <div class="scorecard-btn">  
+                <button id="increment" class="add-point" onclick="incrementAway()">ADD POINT</button>
+                <button id="decrement" class="subtract-point" onclick="decrementAway()">SUBTRACT POINT</button>
+              </div>
+            </div>
+            <button id="score-reset" class="reset-btn" onclick="resetAll()">RESET</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
